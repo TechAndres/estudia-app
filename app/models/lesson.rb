@@ -1,3 +1,3 @@
-class lesson < ApplicationRecord
+class Lesson < ApplicationRecord
 
 end

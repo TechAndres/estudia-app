@@ -1,3 +1,3 @@
-class test < ApplicationRecord
+class Test < ApplicationRecord
 
 end
