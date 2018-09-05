@@ -1,0 +1,45 @@
+<div class="container-fluid" id="container-fluid-grid">
+      <div class="row align-items-center row-search justify-content-center text-center">
+        <div class="col-6">
+            <h1 id="title">LEARN WHILE HAVING FUN</h1>
+            <p>orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut eni</p>
+            <div class="dropdown">
+                <a class="btn btn-outline-primary dropdown-toggle full-width" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Choose your lesson
+                </a>
+                <div class="dropdown-menu full-width text-center" aria-labelledby="dropdownMenuLink">
+                  <a class="dropdown-item" href="/users/sign-in">Solar System</a>
+                  <a class="dropdown-item" href="#">Human Body</a>
+                </div>
+            </div>
+        </div>
+      </div>
+</div>
+<div class="container-fluid" id="container-fluid-grid">
+      <div class="row row-lessons justify-content-center">
+            <div class="col-3 column-section text-center" >
+                  <h1>Solar System</h1>
+                  <p>Learn facts about the<br> solar system's and measure your knowledge about that in a test</p>
+                  <a class="button-border btn btn-outline-primary full-width-button rounded" href="#" role="button" id= "color_solar"> GO <span class="sr-only">(current)</span></a>
+            </div>
+            <div class="col-5 text-center solar">
+              <a class="navbar-brand" href="">
+                <%= image_tag("solarsystem.png", id: "", alt: "solar" )%>
+              </a>
+            </div>
+          </div>
+
+<div class="container-fluid" id="container-fluid-grid">
+      <div class="row row-lessons-2 justify-content-center">
+            <div class="col-3 order-2 column-section text-center" >
+                <h1 >Human Body</h1>
+                <p>Learn facts about the<br> Human Body and measure your knowledge about that in a test</p>
+                <a class="  text-center button-border btn btn-outline-success full-width-button rounded" href="#" role="button" id= "color_human"> GO <span class="sr-only">(current)</span></a>
+            </div>
+            <div class="col-5 order-1 column-section2" >
+                <a class="navbar-brand" href="">
+                    <%= image_tag("humanbody.png", id: "", alt: "solar" )%>
+                </a>
+            </div>
+      </div>
+</div>

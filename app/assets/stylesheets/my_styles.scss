@@ -1,9 +1,11 @@
 .nav #navbar-primaria{
   padding: 0;
+  font-weight: bold;
 }
 
 #logo{
-  width:150px;
+  width:180px;
+  margin-left: 23px;
 }
 
 
@@ -12,7 +14,8 @@
 }
 
 a.button-border.btn.btn-primary{
-      border-color:#FFFFFF;
+  border: 0;
+  font-weight: 650;
 }
 
 #color_lessons{
@@ -36,7 +39,7 @@ a.button-border.btn.btn-primary{
   margin: 0;
 }
 
-.row{
+.row-nav{
     width: 100%;
 }
 .row-search{
@@ -47,7 +50,9 @@ a.button-border.btn.btn-primary{
 .full-width{
   width: 70%;
 }
-
+#title{
+  margin-bottom: 28px;
+}
 .row-lessons{
   height:450px;
   background-color: #FCFF17;
@@ -56,4 +61,46 @@ a.button-border.btn.btn-primary{
 .row-lessons-2{
   height:450px;
   background-color:#FF1769;
+  color:white;
+}
+
+.column-section{
+  padding-top: 115px;
+   margin-right:20px; margin-left:170px;
+}
+
+.column-section2{
+  padding: 0;
+  margin: 0;
+}
+
+
+.solar{
+  margin-left: 220px;
+  margin-top: -5px;
+}
+
+
+.full-width-button{
+  width: 100%;
+  height: 60px;
+  padding: 20px;
+}
+
+#color_solar{
+  background-color: #97E038;
+  border: 7px solid #95FF0A;
+  color: white;
+  font-weight: bold;
+  line-height: 30px;
+  font-size: 35px;
+}
+
+#color_human{
+  background-color: #d313b2;
+  border: 7px solid #ff00f7;
+  color: white;
+  font-weight: bold;
+  line-height: 30px;
+  font-size: 35px;
 }
