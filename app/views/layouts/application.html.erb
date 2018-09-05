@@ -8,7 +8,66 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
   <body>
-    <div class="center-sign">
+    <div class="container-fluid" id="container-fluid-grid">
+        <nav class="navbar navbar-expand-lg" id="navbar-primaria" style="background-color:#179FFF">
+            <div class="row align-items-center" >
+                  <div class="col-1-sm">
+                  <a class="navbar-brand" href="#">
+                  <%= image_tag("logo_estudia.jpg", id: "logo", alt: "logo" )%></a>
+                  </div>
+                    <div class="col-sm center-block">
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse justify-content-center" id="navbarText">
+                      <ul class="navbar-nav">
+                        <li class="nav-item active">
+                          <a class="nav-link  button-border btn btn-primary button-space" href="#" role="button" id= "color_lessons">LESSONS <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link button-border btn btn-primary button-space" href="#" role="button" id= "color_tests">TESTS</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link button-border btn btn-primary " href="#" role="button" id= "color_classroom">CLASSROOM</a>
+                        </li>
+                      </ul>
+                        </div>
+                          </div>
+                        <div class="col-1-sm">
+                          <% if user_signed_in? %>
+                          <%= link_to current_user.email, edit_user_registration_path , class: "nav-link btn btn-primary"%></li>
+                          <%= link_to "Logout", destroy_user_session_path, method: :delete , class: "nav-link btn btn-primary" %></li>
+                          <% else %>
+                          <%= link_to "Login", new_user_session_path, class: " button-border btn btn-primary btn-border" %>
+                          <%= link_to "Sign Up", new_user_registration_path, class: " button-border btn btn-primary ", id:"color_sign_up" %>
+                          <% end %>
+                          </div>
+                  </div>
+            </div>
+        </nav>
+
+        <div class="row align-items-center row-search justify-content-center text-center">
+          <div class="col-6">
+              <h1>hola</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut eni</p>
+              <div class="dropdown">
+                  <a class="btn btn-outline-primary dropdown-toggle full-width" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dropdown link
+                  </a>
+                  <div class="dropdown-menu full-width text-center" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+              </div>
+          </div>
+
+    </div>
+  <div class="row align-items-center justify-content-center text-center row-lessons no-gutters">
+  </div>
+  <div class="row align-items-center justify-content-center text-center row-lessons-2 no-gutters">
+  </div>
+    <!-- <div class="center-sign">
     <% if user_signed_in? %>
  <li><%= link_to current_user.email, edit_user_registration_path %></li>
  <li><%= link_to "Logout", destroy_user_session_path, method: :delete %></li>
@@ -16,6 +75,7 @@
  <li><%= link_to "Sign Up", new_user_registration_path %></li>
  <li><%= link_to "Login", new_user_session_path %></li>
 <% end %>
+</div -->
     <%= yield %>
   </body>
 </html>

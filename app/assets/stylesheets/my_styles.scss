@@ -1,3 +1,59 @@
-nav.navbar.navbar-expand-lg.navbar-light.carlos-light {
-  background-color: #00BCFF;
+.nav #navbar-primaria{
+  padding: 0;
+}
+
+#logo{
+  width:150px;
+}
+
+
+.button-space{
+  margin-right: 15px;
+}
+
+a.button-border.btn.btn-primary{
+      border-color:#FFFFFF;
+}
+
+#color_lessons{
+  background-color:#FECF03;
+}
+
+#color_tests{
+  background-color:#86D13A;
+}
+
+#color_classroom{
+  background-color:#E77AB0;
+}
+
+#color_sign_up{
+  background-color:#FECF03;
+}
+
+#container-fluid-grid{
+  padding: 0;
+  margin: 0;
+}
+
+.row{
+    width: 100%;
+}
+.row-search{
+  height:300px;
+  margin: 50px 0 70px 0 ;
+}
+
+.full-width{
+  width: 70%;
+}
+
+.row-lessons{
+  height:450px;
+  background-color: #FCFF17;
+}
+
+.row-lessons-2{
+  height:450px;
+  background-color:#FF1769;
 }
