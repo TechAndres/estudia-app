@@ -105,7 +105,7 @@ a.button-border.btn.btn-primary{
   font-size: 35px;
 }
 
-// sig-in-styles
+// sign-in-styles
 
 .container-sign-in{
   height: 97vh;
@@ -114,6 +114,7 @@ a.button-border.btn.btn-primary{
     background: url(asset_path("sign-in-frame.png"));
     background-size: auto;
 }
+
 #sig-in-circle{
     width: 377.16px;
     margin-top: 30px;
@@ -121,4 +122,14 @@ a.button-border.btn.btn-primary{
 .col-sig-in{
   background-color: white;
   padding: 50px;
+}
+
+//sign-up-styles
+
+.container-sign-up{
+  height: 97vh;
+  margin-top:-50px;
+  background-color: #2fa9ffed;
+  background: url(asset_path("sign-up-frame.png"));
+  background-size: auto;
 }

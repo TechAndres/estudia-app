@@ -1,16 +1,9 @@
 Rails.application.routes.draw do
   devise_for :users
   get "/" , to: "home#index"
-  resources :users do
+  get "/lessons/:lesson_name" , to: "lessons#show"
+
         resources :lessons do
-              resources :tests do
-                resources :questions
-              end
-        end
-  end
-        resources :assignments do
-              resources :tests do
-                resources :questions
-              end
+              resources :tests
         end
 end

@@ -1,0 +1,3 @@
+<% if user_signed_in? %>
+    <%= link_to "test" , "/lessons/#{@lesson.name}/tests/#{@lesson.test_id}"
+<% end %>
