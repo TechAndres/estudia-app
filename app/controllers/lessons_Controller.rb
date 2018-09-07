@@ -1,7 +1,8 @@
 class LessonsController < ApplicationController
   def index
+    @lesson = Lesson.all
   end
   def show
-    @lesson = Lesson.find_by(name:params[:lesson_name])
+    @lesson = Lesson.find(params[:id])
   end
 end

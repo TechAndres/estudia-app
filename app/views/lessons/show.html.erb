@@ -1,3 +1,9 @@
-<% if user_signed_in? %>
-    <%= link_to "test" , "/lessons/#{@lesson.name}/tests/#{@lesson.test_id}"
-<% end %>
+
+<div class="container">
+  <div class="row align-items-center container-template">
+    <div class="col-12 text-center">
+        <h1 text-center><%= @lesson.name %></h1>
+        <%= link_to "test" , "/lessons/#{@lesson.id}/tests/#{@lesson.id}" , class: "button-border btn btn-primary btn-border"%>
+    </div>
+  </div>
+</div>
