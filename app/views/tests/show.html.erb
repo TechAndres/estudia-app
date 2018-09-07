@@ -5,7 +5,7 @@
                   <% @test.questions.each do |question| %>
                         <div class="form-group">
                             <%= label_tag "#{question.question}" %>
-                            <input type="text_field" name="answers[<%=question.id    %>]">
+                            <input type="text_field" name="answers[<%=question.id    %>]" autocomplete="off">
                         </div>
                   <%end %>
         <%= submit_tag 'send' %>

@@ -1,8 +1,10 @@
-<div class="container-fluid">
-  <div class="row justify-content-center align-items-center">
-    <div class="col-9 text-center">
-      porcentaje de preguntas correctas
-      <%= @score %>
+<div class="container-fluid container-score">
+  <div class="row justify-content-center align-items-center row-score">
+    <div class="col-4 text-center col-score rounded-circle">
+      Percentage of correct questions
+    <div class="score-num">
+       <%=@score%> %
+    </div>
     </div>
   </div>
 </div>

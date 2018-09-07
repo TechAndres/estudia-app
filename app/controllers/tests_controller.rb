@@ -12,7 +12,7 @@ class TestsController < ApplicationController
       q = Question.find(id)
       a_right = q.right_answer
 
-      if q && answer == a_right
+      if q && answer.downcase == a_right
           right_answers += 1
       end
       total_answers += 1.0

@@ -139,3 +139,30 @@ a.button-border.btn.btn-primary{
   height: 97vh;
   margin-top:-50px;
 }
+
+//score-view
+.container-score{
+    background-color: #2fa9ffed;
+}
+
+.row-score{
+    height: 91.1vh;
+    background-color: #179FFF;
+}
+
+
+.col-score{
+  font-size: 40px;
+  font-weight: lighter;
+    background-color: white;
+    width: 500px;
+    height:576.35px;
+    padding-top: 12.5%;
+}
+
+
+.score-num{
+  font-size: 80px;
+  font-weight: bold;
+  color: #efb810;
+}
