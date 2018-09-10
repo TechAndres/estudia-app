@@ -221,7 +221,7 @@ DEPENDENCIES
   capybara (>= 2.15)
   chromedriver-helper
   coffee-rails (~> 4.2)
-  devise (~> 4.5)
+  devise
   jbuilder (~> 2.5)
   jquery-rails
   pg
